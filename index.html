@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1119">
+  <meta name="description" content="FELIKS.FR — Choose a path. Explore Marek Feliks's interactive documentary.">
+  <title>FELIKS.FR — The Crossroads</title>
+  <style>
+    :root{color-scheme:dark;--paper:#eae5d9;--muted:#a3afae;--gold:#d5a96e;--bg:#0b1119}
+    *{box-sizing:border-box}html{height:100%}body{margin:0;min-height:100svh;background:var(--bg);color:var(--paper);font-family:system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 74% 36%,#a16e3e28,transparent 35%),radial-gradient(ellipse at 18% 85%,#56717734,transparent 39%),linear-gradient(135deg,#101d25 0%,#0b1119 65%);z-index:-3}
+    body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.25;background:repeating-linear-gradient(109deg,transparent 0 3px,#f0e5c705 3px 4px)}
+    header{padding:clamp(24px,5vw,60px);display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .brand{font-weight:800;letter-spacing:.15em;font-size:19px;text-decoration:none;color:var(--paper)}.brand span{color:var(--gold)}
+    .meta{font-size:10px;font-weight:650;letter-spacing:.26em;color:var(--muted);text-align:right}
+    main{min-height:calc(100svh - 190px);display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,1.1fr);align-items:center;gap:0;max-width:1340px;margin:auto;padding:15px clamp(24px,6vw,80px) 50px}
+    .intro{z-index:1}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.3em;color:var(--gold);font-weight:700}
+    h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.06em;line-height:1.01;font-size:clamp(58px,7.6vw,115px);margin:22px 0 22px}
+    h1 em{font-weight:400;color:var(--gold)}.intro p{max-width:405px;color:#adb7b7;font-size:clamp(15px,1.5vw,18px);line-height:1.8}
+    .scene{position:relative;min-height:540px;display:grid;place-items:center;isolation:isolate}
+    .scene:before{content:"";position:absolute;bottom:12%;width:min(68%,430px);height:32px;background:#02050977;filter:blur(26px);border-radius:50%}
+    .post{position:absolute;left:49.7%;top:13%;bottom:0;width:23px;background:linear-gradient(90deg,#332b27 0%,#947253 35%,#4a392d 70%,#211c1b);transform:translateX(-50%);border-radius:3px;box-shadow:10px 10px 18px #0008}
+    .road-sign{position:absolute;display:flex;align-items:center;gap:20px;padding:21px 24px;min-width:min(90%,440px);border:2px solid #c7b39a;border-radius:5px;background:linear-gradient(135deg,#2d3a3b,#182324);box-shadow:0 17px 28px #0009,inset 0 0 0 5px #172022;transform:rotate(-4deg);text-decoration:none;color:var(--paper);left:7%;top:29%;transition:transform .35s ease,box-shadow .35s ease,background .35s ease}
+    .road-sign:hover,.road-sign:focus-visible{transform:translateY(-8px) rotate(-2deg);box-shadow:0 25px 36px #000a,0 0 0 2px var(--gold)}
+    .road-sign:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
+    .road-sign strong{display:block;font-size:clamp(27px,3vw,43px);letter-spacing:.08em;font-family:Georgia,serif;font-weight:400}
+    .road-sign small{display:block;margin-top:6px;font-size:10px;letter-spacing:.23em;color:#c5bdaf}
+    .arrow{font-size:clamp(36px,4vw,56px);color:var(--gold);line-height:1}
+    .small-sign{position:absolute;left:37%;top:55%;padding:13px 20px;font-size:10px;font-weight:750;letter-spacing:.17em;border:1px solid #685846;background:#4c3a2d;color:#e8dcc5;transform:rotate(5deg);white-space:nowrap;box-shadow:0 12px 25px #0008}
+    footer{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:16px clamp(24px,5vw,60px) 25px;color:#7e918f;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+    @media(max-width:760px){header{padding:24px}.meta{font-size:8px}main{grid-template-columns:1fr;padding:38px 24px 0;min-height:auto}.intro p{max-width:580px}.scene{min-height:390px}.post{top:7%;bottom:0}.road-sign{top:26%;left:3%;min-width:94%;padding:20px 16px}.small-sign{left:22%;top:58%}footer{padding:20px 24px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+<header><a class="brand" href="/" aria-label="Feliks.fr home">FELIKS<span>.</span>FR</a><div class="meta">ONE NAME. MANY ROADS.</div></header>
+<main>
+  <section class="intro" aria-labelledby="heading">
+    <span class="eyebrow">The starting point</span>
+    <h1 id="heading">Which way<br><em>next?</em></h1>
+    <p>Some roads lead across borders. Others lead to entirely new worlds. Every road becomes part of the story.</p>
+  </section>
+  <section class="scene" aria-label="Choose a destination">
+    <div class="post" aria-hidden="true"></div>
+    <a class="road-sign" href="https://marek.feliks.fr/" aria-label="Explore Marek's journey at marek.feliks.fr">
+      <div><strong>MAREK</strong><small>THE JOURNEY · EXPLORE STORY</small></div><span class="arrow" aria-hidden="true">→</span>
+    </a>
+    <div class="small-sign" aria-hidden="true">FELIKS.FR · YOU ARE HERE</div>
+  </section>
+</main>
+<footer><span>© <span id="y">2026</span> FELIKS.FR</span><span>Each journey has its own direction.</span></footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body></html>
