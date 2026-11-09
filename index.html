@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1119">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="canonical" href="https://feliks.fr/">
   <meta name="description" content="FELIKS.FR — Choose a path. Explore Marek Feliks's interactive documentary.">
   <title>FELIKS.FR — The Crossroads</title>
   <style>
@@ -33,6 +34,12 @@
     @media(max-width:760px){header{padding:24px}.meta{font-size:8px}main{grid-template-columns:1fr;padding:38px 24px 0;min-height:auto}.intro p{max-width:580px}.scene{min-height:390px}.post{top:7%;bottom:0}.road-sign{top:26%;left:3%;min-width:94%;padding:20px 16px}.small-sign{left:22%;top:58%}footer{padding:20px 24px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}}
   </style>
+  <script>
+    // Hide referral/query parameters in the address bar; preserve chapter anchors.
+    if (window.location.search) {
+      window.history.replaceState(window.history.state, '', window.location.pathname + window.location.hash);
+    }
+  </script>
 </head>
 <body>
 <header><a class="brand" href="/" aria-label="Feliks.fr home">FELIKS<span>.</span>FR</a><div class="meta">ONE NAME. MANY ROADS.</div></header>
